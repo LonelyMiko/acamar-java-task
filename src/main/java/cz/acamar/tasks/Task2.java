@@ -22,9 +22,7 @@ public class Task2 {
     public int[] squaresOfSortedArray(int[] input) {
         return Arrays.stream(input)
                 .map(num -> num * num) // squares of each number
-                .boxed()
                 .sorted() // sorted in non-decreasing order
-                .mapToInt(num -> num)
                 .toArray();
     }
 }
